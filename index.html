@@ -25,9 +25,12 @@
 
     <legend>Sign up</legend>
 
-    <!-- usually you'll want to use labels for all inputs, in addition to possibly setting placeholder text. This is an accesibility and SEO win, and in more complex forms, users sometimes forget what input they were on, and need to see the label mid-entry. -->
-    <input type="email" placeholder="Email Address" name="user_email" />
-    <input placeholder="Password" label="false" autocomplete="off" type="password" name="user_password" />
+    <label for="user-email">Email</label>
+    <input type="email" placeholder="foo@bar.com" name="user-email" id="user_email" />
+
+    <label for="user-password">Password</label>
+    <input placeholder="1234passw0rd" label="false" type="password" name="user-password" id="user-password" />
+
     <button type="submit"/>Sign up</button>
 
     <p><a href="/forgot_password/new">Forgot password?</a></p>
