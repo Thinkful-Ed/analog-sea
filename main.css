@@ -1,9 +1,11 @@
+
 body {
     background: #298eea;
     font-family: 'Roboto', helvetica, sans-serif;
     padding: 0;
     margin: 0;
 }
+
 body * {
     box-sizing: border-box;
 }
@@ -91,6 +93,7 @@ button:hover[type='submit'] {
 
 .signup-form a {
     text-decoration: none;
+    color: #999;
     border-bottom: 1px solid #bbb;
 }
 
@@ -107,6 +110,10 @@ button:hover[type='submit'] {
     font-weight: 600;
     border: 0;
     padding: 0;
+}
+
+.footer a {
+    color: white;
 }
 
 .footer a:hover { color: #E7F1F9 }
