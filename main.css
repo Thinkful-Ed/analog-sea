@@ -21,7 +21,8 @@ body * {
 
 .signup-form {
     margin: 0 auto;
-    width: 400px;
+    min-width: 400px;
+    max-width: 10em;
     padding: 40px;
     border-radius: 3px;
     background: white;
@@ -32,8 +33,8 @@ body * {
     font-weight: 300;
     color: #565656;
     margin: 0 auto 45px;
-    font-size: 35px;
-    line-height: 38px;
+    font-size: 2.1875em;
+    line-height: 1;
     letter-spacing: 0;
 }
 
@@ -46,12 +47,12 @@ input[type='password'],
 button[type='submit'] {
     background: #fcfcfc;
     border: 2px solid #e7e7e7;
-    margin: 20px auto;
+    margin: .5em auto;
     padding: 15px;
     width: 100%;
     display: block;
     border-radius: 3px;
-    font-size: 18px;
+    font-size: 1.125em;
     transition: opacity 0.4s;
     text-align: left;
     height: auto;
@@ -69,7 +70,7 @@ button[type='submit'] {
     background: #15CD72;
     border: 0;
     font-weight: 500;
-    font-size: 22px;
+    font-size: 1.375em;
     text-align: center;
     cursor: pointer;
     margin-bottom: 0;
@@ -85,10 +86,10 @@ button:hover[type='submit'] {
 }
 
 .signup-form p {
-    font-size: 14px;
+    font-size: .875em;
     text-align: center;
     margin: 0;
-    margin-top: 10px;
+    margin-top: 1em;
     color: #999;
 }
 
