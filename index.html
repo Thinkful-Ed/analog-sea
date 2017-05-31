@@ -1,43 +1,38 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <title>AnalogSea</title>
 
-<link rel="stylesheet" href="main.css" />
+<!--SEO goodies-->
+<meta name="description" content="Sign up for AnalogSea.">
 
-<!-- seo goodies -->
+<!--Reset to normalize appearance of elements across browsers-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
+
+<!--Our styles-->
+<link rel="stylesheet" href="main.css">
 
 </head>
 <body>
+  
+  <!-- a11y note: the word "logo" is redundant when setting alt attributes on logos. Just communciate the business entity being named by the logo. In this case, it's AnalogSea-->
+  <img class="logo" src="https://tf-assets-prod.s3.amazonaws.com/tf-curric/WEB-DEV-001/2.5.2_challenge_signup_form/logo.png" alt="AnalogSea" />
 
-  <img class="logo" src="logo.png" alt="AnalogSea logo" />
-
-  <!-- design note on this form: usually you want to put as little
-  friction as possible in the experience of signing up. sure
-  your marketers might want to know the customer's name, but
-  if the customer doesn't fill out the form because they're
-  sick of giving you info about themselves, that's not going
-  to help you. This is to say, recognize that there can be
-  a tension between getting data from a user and getting them
-  to follow through and submit that data as easily and quickly
-  as possible. -->
-  <form class="signup-form" action="/signup" accept-charset="UTF-8" method="post">
-
-    <legend>Sign up</legend>
-
-    <label for="user-email">Email</label>
-    <input type="email" placeholder="foo@bar.com" name="user-email" id="user_email" required/>
-
-    <label for="user-password">Password</label>
-    <input placeholder="1234passw0rd" label="false" type="password" name="user-password" id="user-password" required/>
-
-    <button type="submit"/>Sign up</button>
-
+  <!-- design note: usually, you want to put as little friction as possible in the experience of signing up. Your marketers might want to know the customer's name, but if the customer doesn't fill out the form because they're sick of giving you info about themselves, that's not going to help you. Recognize that there can be a tension between getting data from a user and getting them to follow through  and submit that data as easily and quickly as possible. -->
+  <form role="form" action="/signup" accept-charset="UTF-8" method="post" class="signup-form">
+    <fieldset>
+      <legend>Sign up</legend>
+      <label for="user-email">Email</label>
+      <input type="email" placeholder="foo@bar.com" name="user-email" id="user-email" required/>
+      <label for="user-password">Password</label>
+      <input placeholder="1234passw0rd" type="password" name="user-password" id="user-password" required/>
+      <button type="submit">Sign up</button>
+    </fieldset>
     <p><a href="/forgot_password/new">Forgot password?</a></p>
   </form>
 
-  <div class='footer'>
+  <footer role="contentinfo" class="footer">
     <p>Already have an account? <a href="/login">Log in</a></p>
-  </div>
+  </footer>
 </body>
 </html>
